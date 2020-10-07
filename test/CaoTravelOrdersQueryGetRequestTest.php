@@ -1,11 +1,10 @@
-# opensdk-caotravel
-
-
-### 介绍
-曹操出行SDK
-
-#### 使用示例
-~~~php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Ken.Zhang
+ * Date: 2019/9/23
+ * Time: 11:46
+ */
 require '../vendor/autoload.php';
 
 use OpenSDK\CaoTravel\Client;
@@ -13,6 +12,13 @@ use OpenSDK\CaoTravel\Requests\CaoTravelOrdersQueryGetRequest;
 
 class CaoTravelOrdersQueryGetRequestTest
 {
+
+    private $appKey = '4603f791f30e2bd1';
+
+    private $appSecret = '1feece4ae310fc79523d0aa2607eff2d';
+
+    private $url = 'https://cop.caocaokeji.cn';
+
     public function __invoke()
     {
         $c = new Client();
@@ -39,5 +45,8 @@ class CaoTravelOrdersQueryGetRequestTest
         $msectime = (int)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
         return $msectime;
     }
+
 }
-~~~
+
+(new CaoTravelOrdersQueryGetRequestTest())();
+
