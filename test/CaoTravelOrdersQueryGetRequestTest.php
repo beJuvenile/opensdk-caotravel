@@ -13,9 +13,9 @@ use OpenSDK\CaoTravel\Requests\CaoTravelOrdersQueryGetRequest;
 class CaoTravelOrdersQueryGetRequestTest
 {
 
-    private $appKey = '4603f791f30e2bd1';
+    private $appKey = '';
 
-    private $appSecret = '1feece4ae310fc79523d0aa2607eff2d';
+    private $appSecret = '';
 
     private $url = 'https://cop.caocaokeji.cn';
 
